@@ -1,0 +1,22 @@
+pytest~=6.2.4
+pytest-check==0.3.9
+pytest-xdist==1.33.0
+pytest-html==2.1.1
+pytest-mock==3.3.1
+tavern==1.2.2
+docker==4.2.2
+pandas~=1.2.4
+jmespath==0.10.0
+halo==0.0.29                    
+py_jama_rest_client==1.13.0
+textract==1.6.3
+. #installs xFramework_libraries
+#json
+#subprocess
+#path
+#polling2
+
+numpy~=1.20.3
+setuptools~=57.0.0
+requests~=2.25.1
+junitparser~=2.1.1

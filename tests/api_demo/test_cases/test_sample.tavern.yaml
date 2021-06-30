@@ -1,0 +1,23 @@
+test_name: Smoke Test
+
+marks:
+  - api_demo
+  - usefixtures:
+      - testcase_logger
+      - accession_generator
+
+stages:
+  - name: GET
+    request:
+      url: "https://jsonplaceholder.typicode.com/todos/1"
+      method: GET
+      headers:
+        content-type: application/json
+    response:
+      strict: False
+      status_code: 200
+      json: 
+        userId: 1
+        id: 1
+        title: !anystr
+        completed: false

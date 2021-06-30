@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Math" tests="2" errors="0" failures="1" skipped="0" time="0.026">
+<testcase classname="Math" name="TC-GID-200747: Robot Addition Test Case" time="0.002">
+</testcase>
+<testcase classname="Math" name="TC-GID-200748: Robot Subtraction Test Case" time="0.002">
+<failure message="1 != 2" type="AssertionError"></failure>
+</testcase>
+</testsuite>

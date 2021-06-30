@@ -1,0 +1,8 @@
+# common.yaml
+---
+
+    name: common variables
+    description: common variables
+    
+    variables:
+        host: "https://jsonplaceholder"

@@ -1,0 +1,276 @@
+{
+    "instrument_id": "NB551243", 
+    "reference": "/GenomeLibTiny/genome.fa", 
+    "run_id": "200224_NB551243_0338_AHFW5JBGXC", 
+    "bcl2fastq_args": null, 
+    "parameter_set": "GH2.11", 
+    "bip_image": null, 
+    "has_dual_index": false, 
+    "bcl2fastq_trimmed_def": null, 
+    "bip_git_version": "3.5.3-0-g8857b98", 
+    "num_cpus": 6, 
+    "hostname": "37da1a54611c", 
+    "lane_count": 4, 
+    "samplesheet": "/output/samplesheet.csv", 
+    "sample_data": {
+        "dual_index": false, 
+        "lanes": false, 
+        "samples": [
+            {
+                "control_lot": "Lot GHM0074", 
+                "type": "AIOControl", 
+                "name": "001500054", 
+                "locations": [
+                    {
+                        "index": "GCGATC"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023634801", 
+                "locations": [
+                    {
+                        "index": "TGGTTA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023634901", 
+                "locations": [
+                    {
+                        "index": "TGAATC"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635001", 
+                "locations": [
+                    {
+                        "index": "ATCGTT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023635101", 
+                "locations": [
+                    {
+                        "index": "GCCACA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635201", 
+                "locations": [
+                    {
+                        "index": "CTTGCG"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635301", 
+                "locations": [
+                    {
+                        "index": "CCTTAA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635401", 
+                "locations": [
+                    {
+                        "index": "TAGGCG"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635501", 
+                "locations": [
+                    {
+                        "index": "CAGGTA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023635601", 
+                "locations": [
+                    {
+                        "index": "AGGCTT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635701", 
+                "locations": [
+                    {
+                        "index": "CTATGC"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023635801", 
+                "locations": [
+                    {
+                        "index": "GGTCAA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023635901", 
+                "locations": [
+                    {
+                        "index": "AGAGTA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023636001", 
+                "locations": [
+                    {
+                        "index": "GTTGGC"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Pharma", 
+                "name": "A023636101", 
+                "locations": [
+                    {
+                        "index": "TACCTT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023636201", 
+                "locations": [
+                    {
+                        "index": "CCACTT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023636301", 
+                "locations": [
+                    {
+                        "index": "CTGATT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023636501", 
+                "locations": [
+                    {
+                        "index": "TTGCAT"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023636601", 
+                "locations": [
+                    {
+                        "index": "TACGAA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023636701", 
+                "locations": [
+                    {
+                        "index": "CGCCTA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Male", 
+                "type": "Clinical", 
+                "name": "A023636801", 
+                "locations": [
+                    {
+                        "index": "GTAGAA"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023636901", 
+                "locations": [
+                    {
+                        "index": "TTCCGC"
+                    }
+                ]
+            }, 
+            {
+                "gender": "Female", 
+                "type": "Clinical", 
+                "name": "A023637101", 
+                "locations": [
+                    {
+                        "index": "TCTTGT"
+                    }
+                ]
+            }
+        ], 
+        "parameters": false
+    }, 
+    "mode": "PROD", 
+    "rt_run_type": "rerun", 
+    "resume": false, 
+    "seqdir": "/input", 
+    "hi_num_cpus": 24, 
+    "host": "", 
+    "bip_version": "3.5.3", 
+    "sequencer_type": "NextSeq", 
+    "outdir": "/output", 
+    "retry_pause": 900, 
+    "requested_version": null, 
+    "num_cycles_read2": 151, 
+    "num_cycles_read1": 151, 
+    "index_mismatches": 0, 
+    "rt_run_modules": [
+        "qc", 
+        "dbload", 
+        "demux", 
+        "fusion", 
+        "align", 
+        "variant", 
+        "cnv", 
+        "report"
+    ]
+}

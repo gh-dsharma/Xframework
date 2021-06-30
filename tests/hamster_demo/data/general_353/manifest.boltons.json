@@ -1,0 +1,57 @@
+{
+    "meta": {
+        "bip_git_version": "3.5.3-0-g8857b98",
+        "flowcell": "200224_NB551243_0338_AHFW5JBGXC",
+        "manifest_version": "1.0.1",
+        "bip_version": "3.5.3",
+        "bolt_ons": {
+            "csm": {
+                "verbose_name": "CNV Suppression Module",
+                "version": "1.0-RLS3",
+                "docker_image": "docker.artifactory01.ghdna.io/g360_cnv_suppression_module:CSM-1.0-RLS3",
+                "docker_sha": "sha256:b7846a62a2ada032f9c60f0ee6828e64370bc23c4d124988310c4ee09dfaadd5",
+                "bolt_on_name": "csm",
+                "external_directories": null,
+                "required": true
+            },
+            "lcm": {
+                "verbose_name": "LDT Control Module",
+                "version": " 1.0",
+                "docker_image": "docker.artifactory01.ghdna.io/lcm:1.0",
+                "docker_sha": "sha256:8ba04be5061db4c33ea43029b1e8e4019d2dc017ef3e47a1963f4bb9d15db166",
+                "bolt_on_name": "lcm",
+                "external_directories": null,
+                "required": true
+            }
+        }
+    },
+    "elements": [
+        {
+            "flowcell": "200224_NB551243_0338_AHFW5JBGXC",
+            "upload_to": "cnv_call",
+            "has_header": true,
+            "file_name": "bolts/csm/A023637101.cnv_call.hdr.tsv",
+            "category": "cnv_call",
+            "md5": "2d09786e819618db47b514e8d7eb59d7",
+            "file_size": 2683,
+            "volatile": false,
+            "bolt_on": "csm",
+            "bolt_on_base_file_name": "A023637101.cnv_call.hdr.tsv",
+            "send_report": false
+        },
+        
+        {
+            "category": "snv_call",
+            "send_report": false,
+            "file_name": "A023637101.snv_call.hdr.tsv",
+            "upload_to": "snv_call",
+            "sample": "A023637101",
+            "flowcell": "200224_NB551243_0338_AHFW5JBGXC",
+            "file_size": 24948,
+            "volatile": false,
+            "has_header": true,
+            "md5": "ed6a7a192206299aeb4034fd7a2c6b7c"
+        }
+    ]
+}
+

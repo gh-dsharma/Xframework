@@ -1,0 +1,11 @@
+{
+  "jama_url": "https://guardanthealth.jamacloud.com",
+  "jama_project": "SANBOX_BI",
+  "jama_test_plan": "TST-123456 ProjectZ v1.0.0 (pytest)",
+  "report_id": "TST-123456",
+  "jama_test_cycle": "SANDBOX_2-TSTPL-9",
+  "test_version_and_release_candidate": "v1.0.0-RC4",
+  "path_to_test_results": "test_data/jama_exec_test_cases/pytest_output.xml",
+  "test_results_type": "pytest",
+  "bulk_comment": "Testing with bulk comment"
+}

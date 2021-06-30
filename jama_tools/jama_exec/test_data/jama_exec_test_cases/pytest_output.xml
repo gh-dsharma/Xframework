@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite errors="1" failures="2" hostname="Emmit-Parubrubs-MacBook-Pro.local" name="pytest" skipped="1" tests="6" time="1.137" timestamp="2020-08-26T14:20:22.933474"><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="3" name="test_gid_195051_addition" time="1.002"></testcase><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="8" name="test_gid_195052_subtraction" time="0.001"><failure message="assert 1 == 2
+  -1
+  +2">math.py:11: in test_gid_195052_subtraction
+    assert difference == 2
+E   assert 1 == 2
+E     -1
+E     +2</failure></testcase><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="13" name="test_gid_196301_raise_exception" time="0.001"><failure message="Exception: testing exception">math.py:15: in test_gid_196301_raise_exception
+    raise Exception(&quot;testing exception&quot;)
+E   Exception: testing exception</failure></testcase><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="17" name="test_gid_196302_errors" time="0.000"><error message="test setup failure">file /Users/eparubrub/Desktop/git_repos/pytest_framework/libraries/jama_exec/jama_exec_test_cases/math.py, line 18
+  def test_gid_196302_errors(nonexistent_parameter):
+E       fixture &apos;nonexistent_parameter&apos; not found
+&gt;       available fixtures: cache, capfd, capfdbinary, caplog, capsys, capsysbinary, check, doctest_namespace, extra, metadata, monkeypatch, pytestconfig, record_property, record_testsuite_property, record_xml_attribute, recwarn, testrun_uid, tmp_path, tmp_path_factory, tmpdir, tmpdir_factory, worker_id
+&gt;       use &apos;pytest --fixtures [testpath]&apos; for help on them.
+
+/Users/eparubrub/Desktop/git_repos/pytest_framework/libraries/jama_exec/jama_exec_test_cases/math.py:18</error></testcase><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="21" name="test_gid_123456789_not_a_jama_test_case" time="0.000"></testcase><testcase classname="libraries.jama_exec.jama_exec_test_cases.math" file="libraries/jama_exec/jama_exec_test_cases/math.py" line="24" name="test_skip" time="0.000"><skipped message="testing skip" type="pytest.skip">libraries/jama_exec/jama_exec_test_cases/math.py:25: testing skip</skipped></testcase></testsuite></testsuites>

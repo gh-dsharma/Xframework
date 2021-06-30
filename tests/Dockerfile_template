@@ -1,0 +1,78 @@
+FROM docker.artifactory01.ghdna.io/ghbibaseimage:1.1.0
+
+# prevent apt errors due to lack of tty
+ENV DEBIAN_FRONTEND noninteractive
+RUN ulimit -n 1024
+
+RUN apt-get update && apt-get install -y --allow-unauthenticated  \
+		wget=1.17.1-1ubuntu1.5 \
+		python-software-properties=0.96.20.7 \
+		vim=2:7.4.1689-3ubuntu1.2 \
+		git=1:2.7.4-0ubuntu1.7 \
+		python-pip=8.1.1-2ubuntu0.4 \
+		docker-ce=5:19.03.2~3-0~ubuntu-xenial \
+		g++=4:5.3.1-1ubuntu1 \
+		libssl1.0.0=1.0.2g-1ubuntu4.15 \
+		libssl-dev=1.0.2g-1ubuntu4.15 \
+		libssl-doc=1.0.2g-1ubuntu4.15 \
+		zlib1g-dev=1:1.2.8.dfsg-2ubuntu4.3 \
+		default-jre=2:1.8-56ubuntu2 \
+		default-jdk=2:1.8-56ubuntu2 \
+		curl=7.47.0-1ubuntu2.14 \
+		cmake=3.5.1-1ubuntu3 \
+		build-essential=12.1ubuntu2 \
+		libffi-dev=3.2.1-4 \
+		postgresql-client=9.5+173ubuntu0.1 \
+		libbz2-dev=1.0.6-8ubuntu0.2 \
+	&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+# copy tools executables from artifactory
+RUN curl -u ${ARTIFACTORY_USERNAME}:${ARTIFACTORY_PASSWORD} -o Python-3.7.4.tgz "https://artifactory01.ghdna.io/artifactory/biExternalSoftware/Python-3.7.4.tgz" \
+    && tar zxf Python-3.7.4.tgz \
+    && cd Python-3.7.4 \
+    && ./configure --enable-shared \
+    && make -j 4 \
+    && make install \
+    && ln -s /usr/local/lib/libpython* /lib/ \
+    && ln -sf /usr/local/bin/python3.7 /usr/bin/python3 \
+    && ln -sf /usr/local/bin/pip3.7 /usr/bin/pip \
+    && rm -rf /usr/src/Python-3.7.4.tgz /usr/src/Python-3.7.4 \
+    && ln -s /usr/share/pyshared/lsb_release.py /usr/local/lib/python3.7/site-packages/lsb_release.py
+
+# copy and install requirements separately
+COPY requirements.txt /tmp/
+RUN pip install -r /tmp/requirements.txt
+
+# copy and run tests
+COPY tests /opt/tests
+COPY libraries /opt/libraries
+COPY pytest.ini /opt/
+
+WORKDIR /opt/
+
+# copy and run tests
+COPY tests /opt/tests
+COPY libraries /opt/libraries
+COPY pytest.ini /opt/
+COPY setup.py /opt/
+WORKDIR /opt/
+
+# copy and install requirements separately
+COPY requirements.txt /opt/
+RUN pip install -r ./requirements.txt
+
+
+RUN git init
+RUN git config --global user.email "you@example.com"
+RUN git add ./tests/csrm/data/
+RUN git commit -m "data"
+#find top level git dir git rev-parse --show-toplevel
+
+#RUN pytest -k test_gid_198615_gene --html=report.html
+#RUN pytest -m "titanite and not docker_fail" --html=report.html
+#RUN tar -czf reports.tar report.html ./assets
+
+#docker build -t docker.artifactory01.ghdna.io/mytest .
+#docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock -v Opt:/opt/tests/emerald/data/ docker.artifactory01.ghdna.io/mytest
+
+#remove the volume

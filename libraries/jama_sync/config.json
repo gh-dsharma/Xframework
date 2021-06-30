@@ -1,0 +1,26 @@
+{
+  "jama_url": "https://guardanthealth.jamacloud.com",
+  "default_test_case_api_type": 89,
+  "default_folder_api_type": 32,
+  "default_api_status": 292,
+  "default_test_case_status": "NOT_SCHEDULED",
+  "default_master_project": "SANBOX_BI",
+  "jama_project_list" : [
+    "BI Internal SW Tools",
+    "BIP Master",
+    "Clinical Study Analysis and Reporting Platform",
+    "Enterprise Test Sandbox",
+    "Guardant Health Database",
+    "Guardant Software Platform",
+    "Guardant360 LDT",
+    "Jama Tool Validation Test Project",
+    "Lunar 2",
+    "Lunar LDT",
+    "Lunar1 v2 LDT",
+    "NEW_SANBOX",
+    "OMNI LDT",
+    "SANBOX_BI",
+    "Sandbox_BIAutomation",
+    "SANDBOX_BI"
+  ]
+}

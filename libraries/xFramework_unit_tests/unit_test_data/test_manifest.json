@@ -1,0 +1,14 @@
+{
+    "meta": {
+        "bip_git_version": "1.2.3-4-abcdefgh",
+        "flowcell": "12345_12345_12345_ABCDEFGHIJK",
+        "manifest_version": "1.2.3",
+        "bip_version": "1.2.3"
+    },
+    "elements": [
+        {
+            "file_name": "test_json.json",
+            "md5": "2d09786e819618db47b514e8d7eb59d7"
+        }
+    ]
+}

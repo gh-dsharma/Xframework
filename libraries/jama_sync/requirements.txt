@@ -1,0 +1,4 @@
+halo==0.0.29
+py_jama_rest_client==1.13.0
+pytest==6.2.2
+pytest-dependency==0.5.1
